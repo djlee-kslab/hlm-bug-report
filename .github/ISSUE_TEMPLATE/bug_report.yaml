@@ -1,69 +1,39 @@
-name: Bug Report
-description: File a bug report
+name: 버그 리포트
+description: Report a bug.
 title: "[Bug]: "
 labels: ["type/bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report! Before submitting a `bug`, please make sure there is no existing issue for the one you encountered.
+        상황을 자세하게 알려주세요.
   - type: dropdown
-    id: module
+    id: Domain
     attributes:
-      label: Module
-      description: Which Testcontainers module are you using?
+      label: 문제영역
+      description: 어떤 영역에서 문제가 발생했습니까?
       options:
-        - Core
-        - Azure
-        - Cassandra
-        - Clickhouse
-        - CockroachDB
-        - Consul
-        - Couchbase
-        - DB2
-        - Dynalite
-        - Elasticsearch
-        - GCloud
-        - HiveMQ
-        - InfluxDB
-        - K3S
-        - Kafka
-        - LocalStack
-        - MariaDB
-        - MockServer
-        - MongoDB
-        - MSSQLServer
-        - MySQL
-        - Neo4j
-        - NGINX
-        - Oracle-XE
-        - OrientDB
-        - PostgreSQL
-        - Presto
-        - Pulsar
-        - RabbitMQ
-        - Redpanda
-        - Selenium
-        - Solr
-        - TiDB
-        - ToxiProxy
-        - Trino
-        - Vault
+        - 동기화
+        - 추가
+        - 수급자
+        - 요보사
+        - 기관
+        - 태그내역
     validations:
       required: true
   - type: input
-    id: tc-version
+    id: longterm-module-version
     attributes:
-      label: Testcontainers version
-      description: Which Testcontainers version are you using?
-      placeholder: ex. 1.17.2
+      label: 하이케어 버전
+      description: 버그가 발생한 하이케어의 버전 정보를 알려주세요.
+      placeholder: ex. 4.4.1
     validations:
       required: true
   - type: dropdown
-    id: latest-version
+    id: prod-or-dev
     attributes:
-      label: Using the latest Testcontainers version?
-      description: If you are not using the latest version, can you update your project and try to reproduce the issue? Is it still happening?
+      label: 구동 환경
+      description: 버그 발생시 구동 환경이 prod/dev인지 알려주세요.
       options:
         - 'Yes'
         - 'No'
