@@ -2,4 +2,4 @@ blank_issues_enabled: false
 contact_links:
   - name: 버그 레포트 형식을 한 번 지정해볼까 합니다.
     url: https://kslab.atlassian.net/jira/software/c/projects/HBUG/boards/15
-    about: 많이 불편하면 기존 Jira를 그대로 사용할게요.
+    about: 쓰기 불편하시면, 기존처럼 jira를 그대로 사용할게요.
